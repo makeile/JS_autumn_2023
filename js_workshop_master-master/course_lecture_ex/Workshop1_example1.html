@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to exampple page  to see js. on action</h1>
+    <p>Loremi ipsumi doloremi</p>`
+    <script>
+        alert("Hello world!");
+        alert("Another hello world");
+        alert("Still one more hello world");
+        
+        var firstname = "Markus";
+        var lastname = "Häkkinen";
+        alert(firstname);
+        document.write(lastname);
+        alert(firstname+" "+lastname);
+        console.log(lastname+", "+firstname);
+        
+        
+        
+        var x = 50;
+        var order = "Beer";
+        if (x > 50) {
+        document.write("He's over 50!" );
+        } else if (x <= 50 && x > 30){
+        document.write("Middle aged man, who ordered some "+ order);
+        } else
+        document.write("It seems you're bit underaged.");
+
+        var arr = [i];
+        for (var i=0; i<15; i++) {
+        arr.push( Math.random(1-100) );
+        }
+        console.log(arr);
+        document.write(arr);
+
+
+
+        console.log(areYouOldEnough(5));
+        document.write(areYouOldEnough(19));
+
+        alert(areYouOldEnough(5));
+        alert(areYouOldEnough(25));
+
+        function areYouOldEnough(age) {
+        if (age < 18){
+        return false;
+        }else
+        return true;
+        }
+    
+        var person = {
+            firstname:"John",
+            lastname:"Doe",
+            address: "Pine street",
+            telephone: 123456,
+            age:50,
+            eyeColor:"blue"
+        };
+        console.log(person.age);
+        console.log(person);
+        
+        var person1 ={
+            Firstname:"Jarmo",
+            Lastname:"korhonen"
+        };
+        var person2 = {
+            Firstname:"Simo",
+            Lastname:"Korhonen"
+        };
+        var person3 = {
+            Firstname:"Timo",
+            Lastname:"Korhonen"
+        };
+        var person4 = {
+            Firstname:"Sami",
+            Lastname:"Korhonen"
+        };
+        console.log(person1, person2, person3, person4);
+
+       
+    </script>
+
+</body>
+</html>

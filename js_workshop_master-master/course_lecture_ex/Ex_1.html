@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="myJavascript.js"></script>
 </head>
 <body>
     <h1> Heading 1 </h1>
@@ -12,6 +13,16 @@
        alert("This is my first Javascript")
        var heading = document.getElementsByTagName("h1");
        heading[0].innerHTML = "TESTing";
+       console.log("This is working");
+       document.write("<p> New paragraph </p>");
+       var time = 9;
+       if (time < 10) {
+            greeting = "Hello, Good morning";
+       } else {
+        greeting = "Good day";
+       }
+       console.log(greeting)
+       myFirstFunction();
     </script>
 </body>
 </html>
